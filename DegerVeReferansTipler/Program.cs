@@ -22,6 +22,8 @@ namespace DegerVeReferansTipler
             //sayilar1[0] ? 999
             Console.WriteLine(sayilar1[0]);
 
+
+
             //int - decimal - float - double - bool = değer tip
             //array - class- interface              = referans tip
 
