@@ -1,0 +1,8 @@
+C# dilinde "ternary operatörü" araştırınız. Ternary Operatörü bilmeyen birine yazıyla anlatmanız gerekseydi, nasıl anlatırdınız?
+
+var degişken = ( koşul ) ? "dogru ise burası " : "yanlış ise burası";
+uzunca if   else blogu yazmak yerine tek satırda kulanılır.
+koşul sağlanırsa ( ? ) sağı , koşul sağlanmasa ( : ) sağı çalışır.
+örnek 
+var sayi = ( 5 <=4) ? "Evet " : "Hayır";
+5 , 4 den küçük ve eşit olmadığı için  ( Hayır ) çıktısı alırız..

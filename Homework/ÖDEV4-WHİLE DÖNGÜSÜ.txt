@@ -1,0 +1,14 @@
+C# dilinde "while döngüsünü" araştırınız. While döngüsünü bilmeyen birine yazıyla anlatmanız gerekseydi, nasıl anlatırdınız?
+
+C# While döngüsü, komut ya da komutların bir koşul sağlandığı sürece çalıştırılmasını sağlar.
+For döngüsünde döngü sayısı belli iken While döngüsünde döngü sayısı belli değildir.
+Döngü belirli bir koşul sağlandığı sürece devam eder.
+
+while döngüsünde koşullar true olduğu sürece koşul çalışır. False olduğu zaman program dallanır ve sonlanır.
+int sayı = 1;
+while  ( 1 <= 2)    // koşul
+     {   Console.WriteLine(sayı);
+         sayı++;      // artırma 
+      }
+sayı küçük  veya eşit ise 2 ye Sayı yi yazdır ver 1 artır . Sayı 2 oldu ve 2 <=2 olduğu için tekrar sayı yazdırılıp 1 artırılır.
+ Sayı 3 oldu ve program sonlandı.

@@ -1,0 +1,57 @@
+C# dilinde "switch" yapısını araştırınız. Switch yapısını bilmeyen birine yazıyla anlatmanız gerekseydi, nasıl anlatırdınız?
+
+if else ile aynı görevi gören koşul amaçlı bir yapıdır switch-case yapısı. Kullanımı if else yapısına göre daha düzgün ve rahat olduğu söylenebilir ama tabii kişiden kişiye değişebilir bu.
+Switch içerisine bir koşul sunulur case lerde ise o koşula bağlı sonuçlar yazılır. switch te bulunan koşulu hangi case sağlar ise yani hangi sonuç o koşulu sağlıyor ise o case in içinde bulunan mesaj ekrana yazdırılır.
+Mesela renkler üzerinden örnek verecek olursam 
+
+if (renk == "Green")
+             {
+                 this.BackColor = Color.Green;
+             }
+
+             else if (renk == "Black")
+             {
+                 this.BackColor = Color.Black;
+             }
+
+             else if (renk == "DarkRed")
+             {
+                 this.BackColor = Color.DarkRed;
+             }
+
+             else if (renk == "Cyan")
+             {
+                 this.BackColor = Color.Cyan;
+             }
+
+             else
+             {              
+                 this.BackColor = Color.Gray;           
+             }
+if/else ile bu şekilde yapıcağımız bir şeyi switch case ile şu şekilde yaparız: 
+
+switch (renk)
+            {
+                case "Black":
+                    this.BackColor = Color.Black;
+                    break;
+
+                case "Cyan":
+                    this.BackColor = Color.Cyan;
+                    break;
+
+                case "Green":
+                    this.BackColor = Color.Green;
+                    break;
+
+                case "DarkRed":
+                    this.BackColor = Color.DarkRed;
+                    break;
+
+                default:
+                    this.BackColor = Color.Gray;
+                    break;
+            }
+ikisinde ki mantık aynı sadece yolları farklı ve her case arasına muhakkak break komutunu kullanmak zorundayız yoksa hata alırız. 
+Kodda görünen default ise birebir else ile aynı mantıktadır caselerin hiçbiri 
+sağlamıyorsa default içindeki mesaj iletilir.
