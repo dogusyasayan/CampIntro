@@ -9,6 +9,11 @@ namespace ClassMetotDemo
             Console.WriteLine("Hello World!");
         }
     }
+
+
+
+
+
     class Musteri
     {
         public int Id { get; set; }
